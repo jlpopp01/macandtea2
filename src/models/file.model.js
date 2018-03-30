@@ -22,7 +22,7 @@ File.count({}, function(err, count) {
     if (err) {
       throw err;
     }
-    console.log("DB seeded")
+    console.log("We have tiny DB seeds.")
   });
 
 });

@@ -1,0 +1,34 @@
+/*The Universals*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e69df5;
+    font-weight: 700;
+    font-family: "Oswald";
+}
+
+.drawingboard {
+    height: 400px;
+    width: 650x; 
+    display: center;
+}
+
+/*Media Queries*/
+
+@media (max-width: 576px) {
+    * {
+        background-color: #72193b;
+        color: white;
+        font-weight: 400;
+    }
+    #file-description{
+        display:hide;
+    }
+    .drawingboard {
+        height: 150px;
+        width: 350px;
+    }
+}

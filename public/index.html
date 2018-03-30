@@ -7,15 +7,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <div class="container">
-      <h1>Welcome to Mac and Tea 2.0!</h1>
-      <small class="text-muted">Now with node</small>
+      <h1 class="text-center">Welcome to Mac and Tea 2.0!</h1>
+        <h4 class="text-warning text-center">Now with the power of Node, NPM, Express, Mongoose, Body Parser, and some Bootstrap!</h4>
+          <p class = "text-center">
+            Welcome! This has been an adventure of building a backend of a website, able to communicate between client and server and present data in a neat package.
+            <br>
+            <img src="./drawingboard.jpg" alt="Ideas on a drawing board" class="drawingboard" class = "rounded">
+          </br>
+          <br>Let's make a list of ideas for this website! </br>
+          </p>
       <div id="list-container"></div>
 
-      <button id="add-file-button" class="btn btn-primary" onclick="handleAddFileClick()">Add Request</button>
-      <div id="form-container" class="panel hidden">
+      <button id="add-file-button" class="btn btn-success btn-block" onclick="handleAddFileClick()">Add Idea!</button>
+      <div id="form-container" class="panel hidden container-fluid">
         <form id="add-file-form">
           <input type="hidden" id="file-id" value="" />
           <div class="form-group">
@@ -26,8 +34,8 @@
             <label for="file-description">Description</label>
             <input type="text" class="form-control" id="file-description" placeholder="Description">
           </div>
-          <button type="button" onclick="submitFileForm()" class="btn btn-success">Submit</button>
-          <button type="button" onclick="cancelFileForm()" class="btn btn-link">cancel</button>
+          <button type="button" onclick="submitFileForm()" class="btn btn-info">Submit</button>
+          <button type="button" onclick="cancelFileForm()" class="btn btn-link">Cancel</button>
         </form>
       </div>
     </div>
@@ -40,8 +48,8 @@
         <li class="list-group-item">
           <strong>{{title}}</strong> - {{description}}
           <span class="pull-right">
-            <button type="button" class="btn btn-xs btn-default" onclick="handleEditFileClick('{{_id}}')">Edit</button>
-            <button type="button" class="btn btn-xs btn-danger" onclick="handleDeleteFileClick('{{_id}}')">Del</button>
+            <button type="button" class="btn btn-xs btn-danger" onclick="handleEditFileClick('{{_id}}')">Edit</button>
+            <button type="button" class="btn btn-xs btn-primary" onclick="handleDeleteFileClick('{{_id}}')">Delete</button>
           </span>
         </li>
         {{/each}}

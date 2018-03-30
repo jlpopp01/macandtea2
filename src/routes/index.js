@@ -3,14 +3,13 @@ const router = require('express').Router();
 const mongoose = require('mongoose');
 
 
-
 router.use('/doc', function(req, res, next) {
   res.end(`Documentation http://expressjs.com/`);
 });
 
-/**
- * Get a list of all files in the DB
- */
+
+ /* Get a list of all DB files*/
+
 router.get('/file', function(req, res, next) {
   const fileModel = mongoose.model('File');
 
@@ -24,9 +23,8 @@ router.get('/file', function(req, res, next) {
   });
 });
 
-/**
- * Get a single file by passing its id as a URL param
- */
+/* Get a single file by passing its id as a URL param*/
+
 router.get('/file/:fileId', function(req, res, next) {
   const {fileId} = req.params;
   // same as 'const fileId = req.params.fileId'
@@ -39,8 +37,7 @@ router.get('/file/:fileId', function(req, res, next) {
   res.json(file);
 });
 
-/**
- * Create a new file*/
+/* Create a new file*/
 
 router.post('/file', function(req, res, next) {
   const File = mongoose.model('File');
@@ -59,9 +56,8 @@ router.post('/file', function(req, res, next) {
   });
 });
 
-/**
- * Update an existing file
- */
+/* Edit a file*/
+
 router.put('/file/:fileId', function(req, res, next) {
   const File = mongoose.model('File');
   const fileId = req.params.fileId;
@@ -90,9 +86,8 @@ router.put('/file/:fileId', function(req, res, next) {
 
 });
 
-/**
- * Delete a file
- */
+/*Delete a file*/
+
 router.delete('/file/:fileId', function(req, res, next) {
   const File = mongoose.model('File');
   const fileId = req.params.fileId;

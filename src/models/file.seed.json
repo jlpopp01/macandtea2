@@ -1,5 +1,5 @@
 [
-    {"title":"Buttons", "description": "Clickable buttons for orders" },
-    {"title":"Header Design", "description": "Design a header for a website" },
-    {"title":"Side Bar", "description": "Scrolling sidebar with notes" }
-  ]
+  {"title":"CSS - Mobile", "description": "Make site easier to view in mobile" },
+  {"title":"Focal Image", "description": "Something bright in the header" },
+  {"title":"Fancy Buttons", "description": "Fancy buttons for other things" }
+]

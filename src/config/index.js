@@ -2,7 +2,7 @@
 
 module.exports = {
     appName: 'Hal is ready. Where is Dave? Is he ',
-    port: 3030,
+    port: 8000,
     db: {
       username: 'jayebrd',
       password: 'halseesstars',
