@@ -10,7 +10,7 @@ body {
     font-family: "Oswald";
 }
 
-.drawingboard {
+#drawingboard {
     height: 400px;
     width: 650x; 
     display: center;
