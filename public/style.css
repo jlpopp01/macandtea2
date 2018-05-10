@@ -10,10 +10,11 @@ body {
     font-family: "Oswald";
 }
 
-#brainstorm {
+.brainstorm {
     height: 400px;
     width: 650x; 
     display: center;
+    border-radius: 15px;
 }
 
 /*Media Queries*/
@@ -27,7 +28,7 @@ body {
     #file-description{
         display:hide;
     }
-    .drawingboard {
+    .brainstorm {
         height: 150px;
         width: 350px;
     }
